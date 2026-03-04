@@ -8,32 +8,18 @@ import java.util.Stack;
 
             Scanner sc = new Scanner(System.in);
 
-<<<<<<< HEAD
-            
-=======
 
->>>>>>> 471ac3d (UC7)
             System.out.print("Enter a string: ");
             String word = sc.nextLine();
 
             Stack<Character> stack = new Stack<>();
 
-<<<<<<< HEAD
-           
-=======
-
->>>>>>> 471ac3d (UC7)
             for (int i = 0; i < word.length(); i++) {
                 stack.push(word.charAt(i));
             }
 
             boolean isPalindrome = true;
 
-<<<<<<< HEAD
-           
-=======
-
->>>>>>> 471ac3d (UC7)
             for (int i = 0; i < word.length(); i++) {
                 if (word.charAt(i) != stack.pop()) {
                     isPalindrome = false;
@@ -41,11 +27,6 @@ import java.util.Stack;
                 }
             }
 
-<<<<<<< HEAD
-            
-=======
-
->>>>>>> 471ac3d (UC7)
             if (isPalindrome) {
                 System.out.println("The given string is a Palindrome");
             } else {
