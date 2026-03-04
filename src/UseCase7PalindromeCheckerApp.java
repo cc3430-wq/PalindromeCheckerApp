@@ -8,20 +8,20 @@ import java.util.LinkedList;
 
             Scanner sc = new Scanner(System.in);
 
-            // Take input from user
+
             System.out.print("Enter a string: ");
             String word = sc.nextLine();
 
             Deque<Character> deque = new LinkedList<>();
 
-            // Insert characters into deque
+
             for (int i = 0; i < word.length(); i++) {
                 deque.addLast(word.charAt(i));
             }
 
             boolean isPalindrome = true;
 
-            // Compare front and rear characters
+
             while (deque.size() > 1) {
 
                 char front = deque.removeFirst();
@@ -33,7 +33,7 @@ import java.util.LinkedList;
                 }
             }
 
-            // Print result
+
             if (isPalindrome) {
                 System.out.println("The given string is a Palindrome");
             } else {
