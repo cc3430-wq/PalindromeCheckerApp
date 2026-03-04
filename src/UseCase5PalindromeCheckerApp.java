@@ -8,20 +8,20 @@ import java.util.Stack;
 
             Scanner sc = new Scanner(System.in);
 
-            // Take input from user
+            
             System.out.print("Enter a string: ");
             String word = sc.nextLine();
 
             Stack<Character> stack = new Stack<>();
 
-            // Push characters into stack
+           
             for (int i = 0; i < word.length(); i++) {
                 stack.push(word.charAt(i));
             }
 
             boolean isPalindrome = true;
 
-            // Pop characters and compare
+           
             for (int i = 0; i < word.length(); i++) {
                 if (word.charAt(i) != stack.pop()) {
                     isPalindrome = false;
@@ -29,7 +29,7 @@ import java.util.Stack;
                 }
             }
 
-            // Print result
+            
             if (isPalindrome) {
                 System.out.println("The given string is a Palindrome");
             } else {
