@@ -7,18 +7,18 @@
 
             Scanner sc = new Scanner(System.in);
 
-            // Take input from user
+            
             System.out.print("Enter a string: ");
             String original = sc.nextLine();
 
             String reverse = "";
 
-            // Reverse the string using for loop
+            
             for (int i = original.length() - 1; i >= 0; i--) {
                 reverse = reverse + original.charAt(i);
             }
 
-            // Compare original and reversed string
+            
             if (original.equals(reverse)) {
                 System.out.println("The given string is a Palindrome");
             } else {
